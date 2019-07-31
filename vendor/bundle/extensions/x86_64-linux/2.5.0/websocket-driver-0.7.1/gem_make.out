@@ -1,0 +1,15 @@
+current directory: /home/tuan/Documents/prjtrain/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+/usr/share/rvm/rubies/ruby-2.5.1/bin/ruby -r ./siteconf20190730-23541-r8f17f.rb extconf.rb
+creating Makefile
+
+current directory: /home/tuan/Documents/prjtrain/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/tuan/Documents/prjtrain/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/tuan/Documents/prjtrain/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -m 0755 websocket_mask.so ./.gem.20190730-23541-1345q3y

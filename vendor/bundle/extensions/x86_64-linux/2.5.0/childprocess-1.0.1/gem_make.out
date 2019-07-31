@@ -1,0 +1,5 @@
+current directory: /home/tuan/Documents/prjtrain/vendor/bundle/gems/childprocess-1.0.1/ext
+/usr/share/rvm/rubies/ruby-2.5.1/bin/ruby mkrf_conf.rb
+
+current directory: /home/tuan/Documents/prjtrain/vendor/bundle/gems/childprocess-1.0.1/ext
+/usr/share/rvm/rubies/ruby-2.5.1/bin/ruby -rrubygems /home/tuan/Documents/prjtrain/vendor/bundle/gems/rake-12.3.3/exe/rake RUBYARCHDIR=/home/tuan/Documents/prjtrain/vendor/bundle/extensions/x86_64-linux/2.5.0/childprocess-1.0.1 RUBYLIBDIR=/home/tuan/Documents/prjtrain/vendor/bundle/extensions/x86_64-linux/2.5.0/childprocess-1.0.1
