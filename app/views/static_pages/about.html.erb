@@ -1,0 +1,13 @@
+<% provide :title, t(".title_message") %>
+
+<h1> <%= t ".title_message" %> </h1>
+<p>
+  <%= t(".about_page_message",
+    link_to_tutorial: link_to(t("static_pages.help.tutorial_message"),
+    "https://www.railstutorial.org/help"),
+    link_to_tutorial_book: link_to(t(".book_message"),
+    "https://www.railstutorial.org/book"),
+    link_to_screencast: link_to(t(".screencast_message"),
+    "http://screencasts.railstutorial.org/"),
+    ).html_safe %>
+</p>
