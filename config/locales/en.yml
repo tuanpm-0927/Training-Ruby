@@ -1,6 +1,5 @@
 en:
-  errors:
-    user_notfound: "User Not Found!"
+  title_message: "Welcome to the Sample App!"
   layouts:
     application:
       title_page: "Ruby on Rails Tutorial Sample App"
@@ -10,6 +9,16 @@ en:
       description_book: "The %{link_to_tutorial} by %{link_to_author_tutorial}"
       tutorial_book_name: "Ruby on Rails Tutorial"
       tutorial_author_name: "Michael Hartl"
+    header:
+      account: "Account"
+      profile: "Profiles"
+      setting: "Settings"
+      users: "Users"
+  sessions:
+    new:
+      login_title: "Login"
+      signup_title: "SignUp"
+      signup_link_to: "New user? %{link_signup_path}"
   static_pages:
     home:
       title_message: "Sample App"
@@ -54,3 +63,7 @@ en:
     about: "About"
     home: "Home"
     login: "Login"
+    signup_title: "Sign up now!"
+    logout: "Log out"
+    login_: "Log In"
+    name_app: "Sample App"
