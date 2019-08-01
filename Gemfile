@@ -4,8 +4,12 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "2.5.1"
 # Use bcrypt to hash password
 gem "bcrypt", "3.1.12"
-# User jquery in rails
+# Use jquery in rails
 gem "jquery-rails"
+# Use faker
+gem "faker", "1.7.3"
+gem "will_paginate", "~> 3.1.0"
+gem "bootstrap-will_paginate", "1.0.0"
 # Use config
 gem "config"
 # Use rubocop
