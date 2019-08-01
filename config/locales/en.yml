@@ -1,11 +1,24 @@
 en:
+  password_resets:
+    edit:
+      title_reset_password: "Reset password"
+      confirmation: "Confirmation"
+      update_password: "Update Password"
+    new:
+      title_forgot_password: "Forgot password"
+      submit: "Submit"
   user_mailer:
     account_activation:
       title_message: "Sample App"
       welcome_name: "Hi %{name}"
       welcome_active_link: "Welcome to the Sample App! 
       Click on the link below to activate your account:"
-
+  password_reset:
+      title_password_reset: "Password reset"
+      tutorial_reset: "To reset your password click the link below:"
+      reset_password_expired: "This link will expire in two hours."
+      password_checkemail: "If you did not request your password to be reset, please ignore this email and
+        your password will stay as it is."
   account_activations:
     edit:
       validate_success: "Account activated!"
@@ -32,6 +45,7 @@ en:
       login_title: "Login"
       signup_title: "SignUp"
       signup_link_to: "New user? %{link_signup_path}"
+      forgot_password: "(forgot password)"
       login_error: "Invalid email/password combination"
       remember_title: "Remember me on this computer"
     create: 
@@ -43,8 +57,7 @@ en:
       rubyonrails_message: "Ruby on Rails"
       signup_link: "Sign up now!"
       alt_image_rails: "Rails logo"
-      error_validate: "Account not activated. "Check your email for the activation link."" 
-      check_error_validate: "Check your email for the activation link."
+      error_validate: "Account not activated. Check your email for the activation link."
     help:
       title_message: "Help"
       tutorial_message: "Ruby on Rails Tutorial"
@@ -93,7 +106,16 @@ en:
         delete_user_success: "User deleted!"
       user:
         confirm_delete_user: "You sure?"
+        reset_password_success: "Password has been updated!"
         delete: "delete"
+        error_password_expired: "Password reset has expired."
+  passwordresets:
+    create:
+      reset_email: "Email sent with password reset instructions"
+      email_notfound: "Email address not found"
+    update:
+      error_empty: "can't be empty"
+      reset_password_success: "Password has been reset."
   common:
     help: "Help"
     news: "New"
