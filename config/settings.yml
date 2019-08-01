@@ -1,0 +1,7 @@
+validates:
+  users:
+    name_maximum: 50
+    email_maximum: 255
+    password_minium: 6
+helper:
+  size: 80
