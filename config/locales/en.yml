@@ -19,6 +19,10 @@ en:
       login_title: "Login"
       signup_title: "SignUp"
       signup_link_to: "New user? %{link_signup_path}"
+      login_error: "Invalid email/password combination"
+      remember_title: "Remember me on this computer"
+    create: 
+      login_error: "Invalid email/password combination"
   static_pages:
     home:
       title_message: "Sample App"
@@ -51,7 +55,7 @@ en:
       error_count_message: 
         one: "The form contains 1 error."
         other: "The form contains %{count} errors."
-  users:
+  user:
       new:
         signup_title: "Sign Up"
         signup_description: "This will be a signup page for new users."
