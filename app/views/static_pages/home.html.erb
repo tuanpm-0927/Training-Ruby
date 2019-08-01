@@ -1,0 +1,8 @@
+<% provide :title, t(".title_message") %>
+
+<h1> <%= t ".title_message" %> </h1>
+<p>
+  <%= t(".home_page_message",
+    link_to_tutorial: link_to(t(".rubyonrails_message"),
+    "https://www.railstutorial.org/")).html_safe %>
+</p>
