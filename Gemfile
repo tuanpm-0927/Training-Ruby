@@ -51,6 +51,7 @@ gem "bootsnap", ">= 1.1.0", require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to
+  gem "sqlite3"
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -61,6 +62,10 @@ group :development do
   # Spring speeds up development by keeping your application
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
+end
+
+group :production do
+  gem "pg", "0.20.0"
 end
 
 group :test do
