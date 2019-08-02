@@ -1,0 +1,14 @@
+<footer class="footer">
+  <small>
+   <%= t(".description_book",
+    link_to_tutorial: link_to(t(".tutorial_book_name"), "https://www.railstutorial.org/"),
+    link_to_author_tutorial: link_to(t(".tutorial_author_name"), "http://www.michaelhartl.com/")).html_safe %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".common.about"), about_path %></li>
+      <li><%= link_to t(".common.contact"), contact_path %></li>
+      <li><a href="http://news.railstutorial.org/"><%= t(".common.news") %></a></li>
+    </ul>
+  </nav>
+</footer>
