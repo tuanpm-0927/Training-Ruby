@@ -2,6 +2,8 @@ source "https://rubygems.org"
 git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.5.1"
+# Use bcrypt to hash password
+gem "bcrypt", "3.1.12"
 # Use rubocop
 gem "rubocop", "~> 0.54.0", require: false
 # Use bootstrap
@@ -10,7 +12,7 @@ gem "bootstrap-sass", "3.3.7"
 gem "rails", "~> 5.2.3"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3"
-# Use Puma as the app server
+# Use Puma as the app server  
 gem "puma", "~> 3.11"
 # Use SCSS for stylesheets
 gem "sass-rails", "~> 5.0"
