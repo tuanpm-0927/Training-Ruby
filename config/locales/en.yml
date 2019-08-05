@@ -1,8 +1,11 @@
 en:
+  errors:
+    user_notfound: "User Not Found!"
   layouts:
     application:
       title_page: "Ruby on Rails Tutorial Sample App"
       _title: " | "
+      welcome_message: "Welcome to the Sample App!"
     footer:
       description_book: "The %{link_to_tutorial} by %{link_to_author_tutorial}"
       tutorial_book_name: "Ruby on Rails Tutorial"
@@ -32,10 +35,19 @@ en:
       contact_message: "contact page"
       contact_page_message: "Contact the Ruby on Rails Tutorial about the sample app at the
       %{link_to_contact}."
+    notfound:
+      alert_notification: "Link not found or not exist"
+  shared:
+    error_messages:
+      error_count_message: 
+        one: "The form contains 1 error."
+        other: "The form contains %{count} errors."
   users:
       new:
         signup_title: "Sign Up"
         signup_description: "This will be a signup page for new users."
+        signup_new: "Create my account"
+        confirm: "Confirmation"
   common:
     help: "Help"
     news: "New"
