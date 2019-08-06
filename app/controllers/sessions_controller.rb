@@ -5,9 +5,10 @@ class SessionsController < ApplicationController
       user = User.find_by(email: params[:session][:email].downcase)
       if user&.authenticate(params[:session][:password])
         log_in user
-        redirect_to user
+        params[:session][:remember_me] == Settings.common.checkbox_active ? remember(user) : forget(user)
+        redirect_back_or user
       else
-        flash[:danger] = t ".errors.login_error"
+        flash.now[:danger] = t ".login_error"
         render :new
       end
     end

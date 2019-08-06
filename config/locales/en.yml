@@ -1,5 +1,7 @@
 en:
   title_message: "Welcome to the Sample App!"
+  errors:
+    user_notfound: "User NotFound!"
   layouts:
     application:
       title_page: "Ruby on Rails Tutorial Sample App"
@@ -55,12 +57,30 @@ en:
       error_count_message: 
         one: "The form contains 1 error."
         other: "The form contains %{count} errors."
-  user:
+  users:
       new:
         signup_title: "Sign Up"
         signup_description: "This will be a signup page for new users."
         signup_new: "Create my account"
         confirm: "Confirmation"
+        btn_signup: "Create my account"
+      edit:
+        btn_edit: "Edit user"
+        btn_save: "Save changes"
+        title_edit_user: "Update your profile"
+        redirect_change_name: "change"
+        danger_login: "Please Log In."
+      index:
+        title_user: "All users"
+      update:
+        profile_update_success: "Profile Updated!"
+      destroy:
+        delete_user_success: "User deleted!"
+      user:
+        confirm_delete_user: "You sure?"
+        delete: "delete"
+      create:
+        
   common:
     help: "Help"
     news: "New"

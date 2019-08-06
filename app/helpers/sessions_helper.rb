@@ -15,6 +15,19 @@ module SessionsHelper
     end
   end
 
+  def redirect_back_or(default)
+    redirect_to (session[:forwarding_url] || default)
+    session.delete(:forwarding_url) 
+  end
+
+  def save_location
+    session[:forwarding_url] = request.original_url unless request.post?
+  end
+
+  def current_user?(user)
+    user == current_user
+  end
+
   # Remembers a user in a persistent session.
   def remember(user)
     user.remember

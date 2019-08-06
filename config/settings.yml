@@ -5,3 +5,8 @@ validates:
     password_minium: 6
 helper:
   size: 80
+common:
+  checkbox_active: "1"
+  per_page: 5
+  avatar_size: 60
+
