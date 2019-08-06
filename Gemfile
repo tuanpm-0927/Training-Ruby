@@ -4,6 +4,8 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "2.5.1"
 # Use bcrypt to hash password
 gem "bcrypt", "3.1.12"
+# User jquery in rails
+gem "jquery-rails"
 # Use config
 gem "config"
 # Use rubocop
