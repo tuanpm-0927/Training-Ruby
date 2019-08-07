@@ -1,4 +1,15 @@
 en:
+  user_mailer:
+    account_activation:
+      title_message: "Sample App"
+      welcome_name: "Hi %{name}"
+      welcome_active_link: "Welcome to the Sample App! 
+      Click on the link below to activate your account:"
+
+  account_activations:
+    edit:
+      validate_success: "Account activated!"
+      validate_danger: "Invalid activation link"
   title_message: "Welcome to the Sample App!"
   errors:
     user_notfound: "User NotFound!"
@@ -32,6 +43,8 @@ en:
       rubyonrails_message: "Ruby on Rails"
       signup_link: "Sign up now!"
       alt_image_rails: "Rails logo"
+      error_validate: "Account not activated. "Check your email for the activation link."" 
+      check_error_validate: "Check your email for the activation link."
     help:
       title_message: "Help"
       tutorial_message: "Ruby on Rails Tutorial"
@@ -58,6 +71,8 @@ en:
         one: "The form contains 1 error."
         other: "The form contains %{count} errors."
   users:
+      create:
+        danger_info: "Please check your email to activate your account."
       new:
         signup_title: "Sign Up"
         signup_description: "This will be a signup page for new users."
@@ -79,8 +94,6 @@ en:
       user:
         confirm_delete_user: "You sure?"
         delete: "delete"
-      create:
-        
   common:
     help: "Help"
     news: "New"
