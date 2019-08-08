@@ -34,7 +34,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    redirect_to root_url and return unless !@user.activated
+    redirect_to root_url and return if @user.activated
   end
   
   def edit; end
