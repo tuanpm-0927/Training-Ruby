@@ -9,4 +9,4 @@ common:
   checkbox_active: "1"
   per_page: 5
   avatar_size: 60
-
+  time: 2

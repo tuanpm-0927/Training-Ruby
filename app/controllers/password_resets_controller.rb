@@ -1,5 +1,5 @@
 class PasswordResetsController < ApplicationController
-  before_action :get_user, :valid_user, :check_expiration, only: [:edit, :update]
+  before_action :load_user, :valid_user, :check_expiration, only: [:edit, :update]
 
   def new; end
 
@@ -37,8 +37,11 @@ class PasswordResetsController < ApplicationController
     params.require(:user).permit(:password, :password_confirmation)
   end
 
-  def get_user
+  def load_user
     @user = User.find_by(email: params[:email])
+    return if @user
+    flash[:warning] = t ".errors.user_notfound"
+    redirect_to notfound_path
   end
 
   # Confirms a valid user.
