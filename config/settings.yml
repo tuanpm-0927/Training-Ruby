@@ -10,3 +10,6 @@ common:
   per_page: 5
   avatar_size: 60
   time: 2
+MG_MAX: 5
+size_content: 140
+

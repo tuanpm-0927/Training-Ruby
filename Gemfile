@@ -2,6 +2,9 @@ source "https://rubygems.org"
 git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.5.1"
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
+gem "i18n-js"
 # Use bcrypt to hash password
 gem "bcrypt", "3.1.12"
 # Use jquery in rails
@@ -62,10 +65,6 @@ group :development do
   # Spring speeds up development by keeping your application
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
-end
-
-group :production do
-  gem "pg", "0.20.0"
 end
 
 group :test do
