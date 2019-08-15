@@ -9,8 +9,21 @@ class User < ApplicationRecord
                     uniqueness: { case_sensitive: false }
   validates :password, presence: true, length: { minimum: Settings.validates.users.password_minium }, allow_nil: true
   has_many :microposts, dependent: :destroy
-  
+  has_many :active_relationships, class_name: Relationship.name,
+    foreign_key: :follower_id, dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+    foreign_key: :followed_id, dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
+  scope :user_active, -> { where(activated: true) }
+
   has_secure_password
+
+
+  def feed
+    following_ids << id
+    Micropost.feed_by_id(following_ids)
+  end
 
   # Sends password reset email.
   def send_password_reset_email
@@ -21,6 +34,19 @@ class User < ApplicationRecord
   def create_reset_digest
     self.reset_token = User.new_token
     update_columns(reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now)
+  end
+
+  # Follow user
+  def follow(other_user)
+    following << other_user  
+  end
+  # Unfollow user
+  def unfollow(other_user)
+    following.delete(other_user)
+  end
+
+  def following?(other_user)
+    following.include?(other_user)
   end
 
   # Sends password reset email.

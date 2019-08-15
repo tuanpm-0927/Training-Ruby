@@ -1,5 +1,8 @@
 en:
   danger_login: "Please log in."
+  relationships:
+    destroy: 
+      user_notfound: "User Notfound!"
   password_resets:
     edit:
       title_reset_password: "Reset password"
@@ -51,6 +54,9 @@ en:
       remember_title: "Remember me on this computer"
     create: 
       login_error: "Invalid email/password combination"
+  relationship:
+    load_user:
+      user_notfound: "User Not Found!"
   static_pages:
     home:
       title_message: "Sample App"
@@ -81,6 +87,9 @@ en:
     notfound:
       alert_notification: "Link not found or not exist"
   shared:
+    stats:
+      following: "Following"
+      follwers: "Followers"
     error_messages:
       error_count_message: 
         one: "The form contains 1 error."
@@ -96,6 +105,13 @@ en:
       accept_file_image: "image/jpeg,image/gif,image/png"
       post: "Create Post"
   users:
+    show_follow: 
+      microposts: "Microposts"
+      view_my_profile: "View My Profile"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
     show:
       microposts: "Microposts %{_count}"
     create:
@@ -123,6 +139,9 @@ en:
         reset_password_success: "Password has been updated!"
         delete: "delete"
         error_password_expired: "Password reset has expired."
+    following:
+        following_title: "Following"
+        followers_title: "Followers"
   microposts:
     create:
       create_success: "Create Micropost Success!"
